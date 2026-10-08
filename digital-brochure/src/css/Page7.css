@@ -1,0 +1,101 @@
+/* 상단 헤더 및 양끝 정렬 로고 설정 */
+.page7-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.top-logo-group {
+  display: flex;
+  justify-content: space-between; /* 왼쪽 끝과 오른쪽 끝으로 자동 분할 */
+  align-items: center;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.header-logo {
+  height: 48px;        /* 로고 높이 (원하시는 비율에 맞춰 조절 가능) */
+  width: auto;
+  object-fit: contain;
+}
+
+/* QR 코드 점선 박스 */
+.info-card {
+  position: relative;
+  border: 2px dashed #65a30d;
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 28px 16px 20px 16px;
+  margin-bottom: 16px;
+}
+
+.info-badge {
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  background-color: #4d7c0f;
+  color: white;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+/* 제목과 QR 코드 간격을 좁히기 위한 설정 */
+.qr-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3f6212;
+  margin-bottom: 4px; /* 여백을 축소 */
+  text-align: center;
+  min-height: 2.2em; /* 높이를 맞춰 QR코드와 가깝게 위치 */
+  display: flex;
+  align-items: flex-end; /* 글자가 아래쪽에 맞춰지도록 설정 */
+  justify-content: center;
+}
+
+/* QR 이미지 크기 */
+.qr-img {
+  width: 130px;
+  height: 130px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+/* 하단 설명 박스 (찐한 빨간색 테두리 추가) */
+.description-box {
+  background-color: #fef3c7;
+  border: 2.5px solid #ff4646;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 0.8rem;
+  color: #78350f;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* 하단 통이미지 */
+.bottom-art-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
