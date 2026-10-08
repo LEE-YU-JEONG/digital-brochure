@@ -1,0 +1,115 @@
+/* 전체 레이아웃 및 브로슈어 컨테이너 */
+.brochure {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fcfbfa;
+}
+
+/* 페이지 섹션 공통 */
+.page-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Cover Section */
+.cover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 네비게이션 버튼 공통 스타일 */
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-button.main-button {
+  background-color: #3b6e45;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 1.05rem;
+}
+
+.nav-button.primary {
+  background-color: #3b6e45;
+  color: white;
+}
+
+.nav-button.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.nav-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.page-number {
+  font-weight: bold;
+  color: #666;
+}
+
+/* 📱 모바일 반응형 스타일 (모바일 화면 잘림 방지) */
+@media (max-width: 768px) {
+  .brochure {
+    padding: 10px; /* 모바일 외부 여백 축소 */
+  }
+
+  .page-section {
+    padding: 16px 12px; /* 모바일 카드 내부 여백 축소하여 가로 공간 확보 */
+    gap: 12px;
+  }
+
+  .nav-button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .nav-button.main-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brochure {
+    padding: 6px;
+  }
+
+  .page-section {
+    padding: 14px 10px;
+  }
+}

@@ -1,0 +1,129 @@
+/* Page 1 Header */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #3b6e45;
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
+.page-header span {
+  font-size: 1.0rem;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.page-header strong {
+  font-size: 1.6rem;
+  color: #3b6e45;
+}
+
+/* Intro Grid Cards (점선 테두리 추가) */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.objective-card, .concept-card {
+  background-color: #f4f8f5;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px dashed #80b38a; /* 점선 테두리 추가 */
+}
+
+.objective-card h2, .concept-card h2 {
+  font-size: 1rem;
+  color: #2e5335;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.objective-card p, .concept-card p {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Central Example Section (중앙 메시지 박스 스타일 추가) */
+.example-box {
+  background-color: #ffdede;
+  border: 2.5px solid #ff6060; /* 중앙 박스 실선 테두리 */
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.example-section h2 {
+  font-size: 1.05rem;
+  color: #2e5335;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.example-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.example-section p.example-subtext {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #103b19;
+}
+
+/* Health Diagram */
+.health-diagram-section {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.diagram-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Message Box */
+.message-box {
+  background-color: #eaf3ed;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.message-box p {
+  margin: 0;
+}
+
+/* Bottom Message */
+.bottom-message {
+  text-align: center;
+  font-weight: 800; /* 글자를 조금 더 두껍게 설정 */
+  font-size: 1.5rem;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: 2px solid #3b6e45;    /* 상단 라인 */
+  border-bottom: 2px solid #3b6e45; /* 하단 라인 */
+}
+
+/* 단어별 색상 정의 (이미지 기반 추출 색상) */
+.bottom-message .color-orange {
+  color: #d96332;
+}
+.bottom-message .color-green {
+  color: #3b8e50;
+}
+.bottom-message .color-yellow {
+  color: #d89e28;
+}
+.bottom-message .color-navy {
+  color: #2b3a67;
+}
