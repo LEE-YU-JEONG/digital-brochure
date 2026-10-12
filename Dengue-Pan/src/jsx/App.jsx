@@ -4,13 +4,14 @@ import Page2 from './Page2';
 import Page3 from './Page3';
 import Page4 from './Page4';
 import Page5 from './Page5';
+import Page6 from './Page6';
 import '../css/App.css';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const goToNextPage = () => {
-    if (currentPage < 5) {
+    if (currentPage < 6) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -29,6 +30,7 @@ export default function App() {
       {currentPage === 3 && <Page3 />}
       {currentPage === 4 && <Page4 />}
       {currentPage === 5 && <Page5 />}
+      {currentPage === 6 && <Page6 />}      
 
       <div className="guide-text" style={{ marginTop: '15px' }}>
         💡 Toca (haz clic) en la pantalla para voltear la página.
@@ -46,7 +48,7 @@ export default function App() {
         <button 
           className="btn" 
           onClick={goToNextPage} 
-          disabled={currentPage === 5}
+          disabled={currentPage === 6}
         >
           Siguiente
         </button>
